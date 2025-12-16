@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Intent: keep the UI feeling native on iOS when installed as a PWA. */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Prevent iOS tap highlight on primary controls */
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
